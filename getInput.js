@@ -1,14 +1,22 @@
 "use strict";
 
 const $ = require("jquery")
-const apiCall = require("./apiCall")
+const {apiCallBeer, apiCallBrewery} = require("./apiCall")
+
+///////click events for buttons/////////////////
 
 $( "#searchBrewery" ).unbind().click(function() {
-   apiCall();
+  let value = $("#input").val()
+   console.log(value);
+   apiCallBrewery(value);
 });
 $( "#searchBeer" ).unbind().click(function() {
-   console.log( "yep" );
+  let value = $("#input").val()
+   console.log(value);
+   apiCallBeer(value);
 });
 $( "#getDetails" ).unbind().click(function() {
    console.log( "worked" );
 });
+
+///////////////////////////////////////////////////
