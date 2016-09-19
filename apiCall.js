@@ -21,7 +21,7 @@ const mikeKey = require("./apiKey")
 //     .then(beerData => beerData)
 //     .catch(err => console.log(err));
 // }
-let getBeer = []
+let beerData = []
 
 function apiCallBeer(beer) {
   const data = {
@@ -32,20 +32,38 @@ function apiCallBeer(beer) {
   rp(data)
     .then(function (body) {
       //   console.log(body.data[0].abv);
-      body = body.data[0].abv
-      getBeer.splice(0, getBeer.length);
-        getBeer.push(body)
+      // body = body.data[0].name body.data[0].name
+      let name = body.data[0].name
+      let abv = body.data[0].abv
+      let decsription = body.data[0].description
+      beerData.splice(0, beerData.length);
+        beerData.push(name, abv, decsription)
     })
     .catch(function (err) {
       console.log(err);
   });
-  return getBeer
+  return beerData
 }
-// request for brewery
-function apiCallBrewery(brewery) {request("https://api.brewerydb.com/v2/search?q=" + brewery + "&type=brewery&key=" + mikeKey + "&format=json",
-function (error, response, body){
-  body = JSON.parse(body)
-  console.log(body.data);
-})
+///////request for brewery///////////////////////
+let getBrewery = []
+
+function apiCallBrewery(brewery) {
+  const data = {
+    uri: "https://api.brewerydb.com/v2/search?q=" + brewery + "&type=beer&key=" + mikeKey + "&format=json",
+    json: true // Automatically parses the JSON string in the response
+  };
+
+  rp(data)
+    .then(function (body) {
+      //   console.log(body.data[0].abv);
+      body = body.data[0].abv
+      getBrewery.splice(0, getBrewery.length);
+        getBrewery.push(body)
+    })
+    .catch(function (err) {
+      console.log(err);
+  });
+  return getBrewery
 }
+
 module.exports =  {apiCallBeer, apiCallBrewery}

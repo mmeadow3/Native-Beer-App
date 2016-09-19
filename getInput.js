@@ -9,6 +9,11 @@ $( "#searchBrewery" ).unbind().click(function() {
   let value = $("#input").val()
    console.log(value);
    apiCallBrewery(value);
+   let brewery = apiCallBrewery()
+  setTimeout(function () {
+      console.log(brewery);
+       $(".output").html(brewery)
+  }, 2000);
 });
 $( "#searchBeer" ).unbind().click(function() {
   let value = $("#input").val()
@@ -17,7 +22,7 @@ $( "#searchBeer" ).unbind().click(function() {
    let beer = apiCallBeer()
   setTimeout(function () {
       console.log(beer);
-       $(".output").append(beer)
+       $(".output").html(beer)
   }, 2000);
 });
 $( "#getDetails" ).unbind().click(function() {
