@@ -2,16 +2,45 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="photon-0.1.2-alpha/dist/css/photon.min.css">
+    <link rel="stylesheet" href="styles/main.css">
     <title>Beer Finder</title>
   </head>
   <body>
-    <input type="form" name="name" id="input" placeholder="search here">
-    <button type="button" id="searchBrewery" name="Search Brewery">Search Brewery</button>
-    <button type="button" id="searchBeer" name="Search Beer">Search Beer</button>
-    <button type="button" id="getDetails" name="Get More Details">Get More Details</button>
-    <div class="output"></div>
+    <header class="toolbar toolbar-header">
+      <h1 class="title">Get Info About Your Favorite Beer</h1>
+    </header>
+    <div id="inputBox">
+      <input type="form" name="name" id="input" placeholder="search here">
+      <button class="btn btn-mini btn-primary" type="button" id="searchBeer" name="Search Beer">Search Beer</button>
+      <!-- <button type="button" id="searchBrewery" name="Search Brewery">Search Brewery</button> -->
+    </div>
+    <div>
+      <p>
+        Name: <div class="outputName"></div>
+      </p>
+      <p>
+        Abv: <div class="outputAbv"></div>
+      </p>
+      <p>
+        Description: <div class="outputDesc"></div>
+      </p>
+    </div>
+    <div id="getDeetz">
+      <button class="btn btn-mini btn-primary" type="button" id="getDetails" name="Get More Details" style="display:none;">Get More Details</button>
+    </div>
+    <div>
+      <div class="imageOutput"></div>
+      <div class="availabilityOutput"></div>
+      <div class="glasswareOutput"></div>
+    </div>
+    <footer class="toolbar toolbar-footer">
+      <h1 class="title"><span class="icon icon-code"></span>Cheers! - Mike Meadows 2016<span class="icon icon-code"></span></h1>
+    </footer>
+
     <!-- <script src="apiCall.js"></script> -->
+
     <script src="getInput.js"></script>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   </body>
-</html>
+  </html>

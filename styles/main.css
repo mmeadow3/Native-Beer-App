@@ -1,0 +1,34 @@
+button {
+  border-radius: 6px;
+}
+html, body {
+  height: 100%;
+  overflow: scroll;
+}
+
+.toolbar-footer{
+  position:fixed;
+bottom:0;
+width: 100%
+}
+/*//////input box///////*/
+#input{
+  text-align: center;
+}
+
+#inputBox{
+  margin-top: 10px;
+  text-align: center;
+}
+/*/////////text////////////*/
+p{
+  font-weight: bold
+}
+/*///////////image */
+.imageOutput{
+  text-align: center
+}
+/*/////////details box/////////*/
+#getDeetz{
+  text-align: center
+}
