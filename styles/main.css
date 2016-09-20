@@ -1,0 +1,21 @@
+button {
+  border-radius: 6px;
+}
+html, body {
+  height: 100%;
+}
+
+.toolbar-footer{
+  position:fixed;
+bottom:0;
+width: 100%
+}
+
+#input{
+  text-align: center;
+}
+
+#inputBox{
+  margin-top: 10px;
+  text-align: center;
+}
