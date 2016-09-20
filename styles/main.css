@@ -3,6 +3,7 @@ button {
 }
 html, body {
   height: 100%;
+  overflow: scroll;
 }
 
 .toolbar-footer{
@@ -10,7 +11,7 @@ html, body {
 bottom:0;
 width: 100%
 }
-
+/*//////input box///////*/
 #input{
   text-align: center;
 }
@@ -18,4 +19,16 @@ width: 100%
 #inputBox{
   margin-top: 10px;
   text-align: center;
+}
+/*/////////text////////////*/
+p{
+  font-weight: bold
+}
+/*///////////image */
+.imageOutput{
+  text-align: center
+}
+/*/////////details box/////////*/
+#getDeetz{
+  text-align: center
 }

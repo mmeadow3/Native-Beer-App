@@ -15,6 +15,7 @@ $( "#searchBeer" ).unbind().click(function() {
     $(".outputDesc").html(beerDesc)
     $("#input").val("");
   }, 1000);
+  $( "#getDetails" ).show( "slow" );
 });
 
 // $( "#searchBrewery" ).unbind().click(function() {

@@ -75,9 +75,9 @@ function getDetails(beer) {
       beerImage.splice(0, beerImage.length);
       beerImage.push(image.toString())
       beerGlassware.splice(0, beerGlassware.length);
-        beerGlassware.push("Recommended Glassware: " + glassware)
+        beerGlassware.push("<p>Recommended Glassware: </p>" + glassware)
       beerAvailability.splice(0, beerAvailability.length);
-        beerAvailability.push("Availability: " + availability)
+        beerAvailability.push("<p>Availability: </p>" + availability)
     })
     .catch(function (err) {
       console.log(err);
