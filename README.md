@@ -7,7 +7,7 @@
 
 ### Gallery
 
-![App in action](http://www.giphy.com/gifs/l0MYPbjqq6dkWYjC0 "GIF of App")
+![App in action](https://media.giphy.com/media/l0MYPbjqq6dkWYjC0/giphy.gif "GIF of App")
 
 
 
