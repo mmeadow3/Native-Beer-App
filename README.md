@@ -17,6 +17,10 @@
 
 ![App in action](https://media.giphy.com/media/l0MYPbjqq6dkWYjC0/giphy.gif "GIF of App")
 
+---
+
+![App in action](https://media.giphy.com/media/l0HlBHPnhpR31M5ZS/giphy.gif "GIF of App")
+
 
 
 ---
