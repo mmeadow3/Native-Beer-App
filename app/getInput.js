@@ -1,7 +1,7 @@
 "use strict";
 
 const $ = require("jquery")
-const {apiCallBeer, getDetails, beerAvailability, beerGlassware, beerData, beerDesc, beerName, beerImage} = require("./apiCall")
+const {apiCallBeer, getDetails, beerAvailability, beerGlassware, beerData, beerDesc, beerName, beerImage} = require("./app/apiCall")
 
 ///////click events for buttons/////////////////
 
