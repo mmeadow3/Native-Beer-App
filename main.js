@@ -6,7 +6,7 @@ let win
 
 function createWindow () {
   // Create the browser window.
-  win = new BrowserWindow({width: 600, minHeight: 850, type: "textured"})
+  win = new BrowserWindow({width: 600, minHeight: 850, type: "textured", nodeIntegration: false})
 
 
 
