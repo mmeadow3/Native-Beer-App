@@ -19,7 +19,6 @@
 
 ---
 
-![App in action](https://media.giphy.com/media/l0HlBHPnhpR31M5ZS/giphy.gif "GIF of App")
 
 
 
